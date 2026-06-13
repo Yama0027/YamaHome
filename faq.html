@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4858695882200914"
+     crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>よくある質問 | やまのホームページ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="site-logo" href="index.html">yama<span class="sep">.</span><span class="home-part">home</span></a>
+    <div class="header-status">
+      <span class="status-dot"></span>
+      <span>SERVER ONLINE</span>
+    </div>
+  </header>
+
+  <h1>❓ よくある質問</h1>
+
+  <div class="container">
+
+    <div class="card">
+      <div class="card-corner"></div>
+      <h2>参加について</h2>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-q">サーバーに参加するには何が必要ですか？</button>
+          <p class="faq-a">Java版またはBedrock版（統合版）のMinecraftがあれば参加できます。IPアドレス <strong style="font-family:var(--mono); color:var(--cyan)">mc.kaisaba.net</strong> を入力してください。</p>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q">バージョンはどれでも大丈夫ですか？</button>
+          <p class="faq-a">はい、基本的にどのバージョンでも接続できます。</p>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q">参加後に何をすればいいですか？</button>
+          <p class="faq-a">スポーンしたら建物に入り、すぐそこにある「やま鯖ゲート」に入ってください。そこからサバイバルワールドに移動できます。</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-corner"></div>
+      <h2>ルールについて</h2>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-q">MODやテクスチャパックは使えますか？</button>
+          <p class="faq-a">見た目系のMOD（OptiFine、Sodium等）やテクスチャパックは問題ありません。チートMOD（X-ray等）は禁止です。</p>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q">PvP（プレイヤー同士の戦闘）はできますか？</button>
+          <p class="faq-a">お互いの同意がある場合のみOKです。一方的な攻撃は荒らし行為とみなされます。</p>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q">困ったことがあれば誰に相談すればいいですか？</button>
+          <p class="faq-a">Discordサーバーで管理者（やま）に連絡してください。対応時間は平日17:00〜21:30、休日8:00〜10:00です。</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-corner"></div>
+      <h2>その他</h2>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-q">サーバーはいつ落ちますか？</button>
+          <p class="faq-a">メンテナンス時などに予告なく停止する場合があります。情報はお知らせページまたはDiscordで告知します。</p>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q">ワールドデータのバックアップはありますか？</button>
+          <p class="faq-a">定期的にバックアップを取っていますが、完全な保証はできません。大切な建築は自分でもスクリーンショットを撮っておくことをおすすめします。</p>
+        </div>
+
+      </div>
+    </div>
+
+    <a class="back" href="index.html">トップへ戻る</a>
+  </div>
+
+  <footer class="site-footer">© 2026 yama.home</footer>
+
+  <script>
+    document.querySelectorAll('.faq-q').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.parentElement;
+        const isOpen = item.classList.contains('open');
+        // close all
+        document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+        // open clicked if was closed
+        if (!isOpen) item.classList.add('open');
+      });
+    });
+  </script>
+
+</body>
+</html>
